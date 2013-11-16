@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Core.UI", "Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Infrastructure", "Application.Infrastructure\Application.Infrastructure.csproj", "{434423A3-2B2D-450E-82A5-F508D7DB2E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMovies.Data", "MyMovies.Data\MyMovies.Data.csproj", "{37A98783-E00B-4071-9DDA-8FD8A2A794AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMovies.DataModels", "MyMovies.DataModels\MyMovies.DataModels.csproj", "{37A98783-E00B-4071-9DDA-8FD8A2A794AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMovies.Models", "MyMovies.Models\MyMovies.Models.csproj", "{5990B107-C91A-4881-9BA6-4669D801C902}"
 EndProject
