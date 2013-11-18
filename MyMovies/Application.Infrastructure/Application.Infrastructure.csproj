@@ -34,6 +34,7 @@
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -51,6 +52,7 @@
     <Compile Include="AccountManagement\AccountManagementService.cs" />
     <Compile Include="AccountManagement\IAccountManagementService.cs" />
     <Compile Include="AccountManagement\SimpleMembershipInitializer.cs" />
+    <Compile Include="NotificationManagement\MailSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

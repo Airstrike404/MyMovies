@@ -23,20 +23,22 @@ namespace Application.Infrastructure.AccountManagement
 
 			return result;
 		}
-
+		
 		public void Logout()
 		{
 			WebSecurity.Logout();
 		}
 
-		public void CreateAccount(string login, string password, IList<string> roles, object properties = null, bool requireConfirmationToken = false)
+		public string CreateAccount(string login, string password, IList<string> roles, object properties = null, bool requireConfirmationToken = false)
 		{
-            WebSecurity.CreateUserAndAccount(login, password, properties, requireConfirmationToken);
+			var confirmationToken = WebSecurity.CreateUserAndAccount(login, password, properties, requireConfirmationToken);
 
 			if (roles.Any())
 			{
-				Roles.AddUserToRoles(login, roles.ToArray());	
+				Roles.AddUserToRoles(login, roles.ToArray());
 			}
+
+			return confirmationToken;
 		}
 
 		public bool ChangePassword(string userName, string oldPassword, string newPassword)
