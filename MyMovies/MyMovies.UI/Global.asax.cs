@@ -22,7 +22,7 @@ namespace MyMovies.UI
     {
         protected void Application_Start()
         {
-            //SimpleMembershipInitializer.Initialize();
+            SimpleMembershipInitializer.Initialize();
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

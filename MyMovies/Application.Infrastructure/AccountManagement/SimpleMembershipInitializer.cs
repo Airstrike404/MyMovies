@@ -19,24 +19,7 @@ namespace Application.Infrastructure.AccountManagement
 
         public SimpleMembershipInitializer()
         {
-            //Database.SetInitializer<LmPlatformModelsContext>(null);
-
-            try
-            {
-                bool firstLoad;
-
-                //using (var context = new LmPlatformModelsContext())
-                //{
-                //    firstLoad = DataBaseInitializer.InitializeDatabase(context);
-                //}
-
-                WebSecurity.InitializeDatabaseConnection("DefaultConnection", "Users", "UserId", "UserName", autoCreateTables: true);
-
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException("Ошибка", ex);
-            }
+            WebSecurity.InitializeDatabaseConnection("Membership", "UserProfiles", "UserId", "UserName", autoCreateTables: true);
         }
     }
 }
