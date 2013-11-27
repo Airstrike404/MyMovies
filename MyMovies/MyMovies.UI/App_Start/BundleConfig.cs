@@ -18,6 +18,10 @@ namespace MyMovies.UI.App_Start
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/shared").Include(
+                "~/Scripts/application/shared.js",
+                "~/Scripts/application/jQueryExtensions.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/datatable").Include(
                 "~/Scripts/DataTables-1.9.4/media/js/jquery.dataTables.js",
                 "~/Scripts/application/datatable-bootstrappagination.js",

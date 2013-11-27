@@ -65,6 +65,9 @@
     <Reference Include="Microsoft.Web.Mvc">
       <HintPath>..\packages\Mvc4Futures.4.0.20710.0\lib\net40\Microsoft.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Mvc.JQuery.Datatables">
+      <HintPath>..\packages\Mvc.JQuery.Datatables.1.2.61\lib\net40\Mvc.JQuery.Datatables.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -316,8 +319,14 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\ajax-loader-mini.gif" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\collection.png" />
+    <Content Include="Images\no_image.png" />
     <Content Include="Scripts\application\datatable-bootstrappagination.js" />
     <Content Include="Scripts\application\datatables.js" />
+    <Content Include="Scripts\application\jQueryExtensions.js" />
+    <Content Include="Scripts\application\shared.js" />
     <Content Include="Scripts\bootbox.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
@@ -433,6 +442,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_DataTable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -482,6 +492,9 @@
       <Project>{37a98783-e00b-4071-9dda-8fd8a2a794aa}</Project>
       <Name>MyMovies.DataModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
